@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Homes Realty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- New Modern Header -->
+    <div class="over">
+      <header class="main-header">
+        <div class="header-container">
+          <div class="logo">
+            <span class="logo-icon"><i class="fas fa-home"></i></span>
+            <h1>Dream<span>Homes</span></h1>
+          </div>
+
+         <nav class="main-nav">
+    <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+          <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+        </div>
+      </header>
+
+      <!-- Hero Section with Search -->
+      <section
+        class="hero"
+        id="home"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 data-aos="fade-up">Find Your Dream Home Today</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Discover luxury properties in the most desirable locations
+          </p>
+        </div>
+
+        <div class="hero-scroll">
+          <a href="#featured" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+
+     <section class="featured-properties" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Our carefully curated selection of premium homes</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" onclick="openModal(1)">
+                    <div class="property-badge">Featured</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Modern Luxury Villa" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 5</span>
+                                <span><i class="fas fa-bath"></i> 4</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Modern Luxury Villa</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Beverly Hills, CA
+                        </p>
+                        <p class="property-description">
+                            Stunning contemporary villa with panoramic views and smart home features.
+                        </p>
+                        <div class="property-price">
+                            <span>$2,450,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" onclick="openModal(2)">
+                    <div class="property-badge">New</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="Downtown Penthouse" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 2.5</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Downtown Penthouse</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Manhattan, NY
+                        </p>
+                        <p class="property-description">
+                            Luxury penthouse with floor-to-ceiling windows and rooftop access.
+                        </p>
+                        <div class="property-price">
+                            <span>$3,750,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" onclick="openModal(3)">
+                    <div class="property-badge">Exclusive</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Waterfront Estate" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 6</span>
+                                <span><i class="fas fa-bath"></i> 5</span>
+                                <span><i class="fas fa-ruler-combined"></i> 5,800 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Waterfront Estate</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Miami Beach, FL
+                        </p>
+                        <p class="property-description">
+                            Exclusive waterfront property with private dock and infinity pool.
+                        </p>
+                        <div class="property-price">
+                            <span>$6,200,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card" onclick="openModal(4)">
+                    <div class="property-badge">Hot</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Mountain Retreat" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 4</span>
+                                <span><i class="fas fa-bath"></i> 3</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Mountain Retreat</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Aspen, CO
+                        </p>
+                        <p class="property-description">
+                            Luxurious mountain cabin with ski-in/ski-out access and breathtaking views.
+                        </p>
+                        <div class="property-price">
+                            <span>$1,950,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card" onclick="openModal(5)">
+                    <div class="property-badge">Premium</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Urban Loft" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 2</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Urban Loft</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Chicago, IL
+                        </p>
+                        <p class="property-description">
+                            Industrial-chic loft in the heart of downtown with exposed brick and high ceilings.
+                        </p>
+                        <div class="property-price">
+                            <span>$875,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="property-card" onclick="openModal(6)">
+                    <div class="property-badge">New</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80" alt="Suburban Mansion" />
+                        <div class="property-overlay">
+                            <div class="property-details">
+                                <span><i class="fas fa-bed"></i> 7</span>
+                                <span><i class="fas fa-bath"></i> 6</span>
+                                <span><i class="fas fa-ruler-combined"></i> 6,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Suburban Mansion</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Greenwich, CT
+                        </p>
+                        <p class="property-description">
+                            Grand estate with manicured gardens, home theater, and wine cellar.
+                        </p>
+                        <div class="property-price">
+                            <span>$4,200,000</span>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="">
+                <div id="modalBadge" class="modal-badge"></div>
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <p id="modalLocation" class="modal-location"></p>
+                <div id="modalPrice" class="modal-price"></div>
+                
+                <div class="property-specs" id="modalSpecs">
+                    <div class="spec-item">
+                        <i class="fas fa-bed"></i>
+                        <div id="modalBeds" class="spec-value"></div>
+                        <div class="spec-label">Bedrooms</div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-bath"></i>
+                        <div id="modalBaths" class="spec-value"></div>
+                        <div class="spec-label">Bathrooms</div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <div id="modalSqft" class="spec-value"></div>
+                        <div class="spec-label">Square Feet</div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-car"></i>
+                        <div id="modalGarage" class="spec-value"></div>
+                        <div class="spec-label">Garage</div>
+                    </div>
+                </div>
+
+                <div class="property-features">
+                    <h4>Key Features</h4>
+                    <div id="modalFeatures" class="features-list"></div>
+                </div>
+
+                <div id="modalDescription" class="modal-description"></div>
+
+                <div class="contact-section">
+                    <h4>Interested in this property?</h4>
+                    <button class="contact-btn" onclick="contactAgent()">Contact Agent</button>
+                    <button class="contact-btn" onclick="scheduleViewing()">Schedule Viewing</button>
+                    <button class="contact-btn" onclick="requestInfo()">Request Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        const properties = {
+            1: {
+                title: "Modern Luxury Villa",
+                location: "Beverly Hills, CA",
+                price: "$2,450,000",
+                image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+                badge: "Featured",
+                beds: "5",
+                baths: "4",
+                sqft: "3,500",
+                garage: "3",
+                description: "This stunning contemporary villa represents the pinnacle of modern luxury living in the prestigious Beverly Hills area. Featuring panoramic city and mountain views, the home showcases an open-concept design with soaring ceilings, floor-to-ceiling windows, and premium finishes throughout. The gourmet kitchen boasts top-of-the-line appliances, custom cabinetry, and a large island perfect for entertaining. The master suite includes a private balcony, walk-in closet, and spa-like bathroom with a soaking tub and rainfall shower.",
+                features: [
+                    "Smart home automation system",
+                    "Infinity pool with spa",
+                    "Home theater room",
+                    "Wine cellar",
+                    "Gourmet kitchen with premium appliances",
+                    "Master suite with private balcony",
+                    "Three-car garage",
+                    "Landscaped gardens",
+                    "Security system with cameras",
+                    "Central air conditioning"
+                ]
+            },
+            2: {
+                title: "Downtown Penthouse",
+                location: "Manhattan, NY",
+                price: "$3,750,000",
+                image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+                badge: "New",
+                beds: "3",
+                baths: "2.5",
+                sqft: "2,200",
+                garage: "2",
+                description: "Experience luxury living at its finest in this spectacular Manhattan penthouse. Located in the heart of the city, this residence offers breathtaking 360-degree views of the Manhattan skyline and Hudson River. The open-plan living space features floor-to-ceiling windows, hardwood floors, and high-end finishes. The modern kitchen includes premium appliances and custom cabinetry. Residents enjoy exclusive access to a private rooftop terrace, perfect for entertaining or relaxing while taking in the stunning city views.",
+                features: [
+                    "360-degree city views",
+                    "Private rooftop terrace",
+                    "Floor-to-ceiling windows",
+                    "Hardwood flooring",
+                    "Premium kitchen appliances",
+                    "Concierge service",
+                    "Fitness center access",
+                    "24/7 doorman",
+                    "In-unit laundry",
+                    "Central heating and cooling"
+                ]
+            },
+            3: {
+                title: "Waterfront Estate",
+                location: "Miami Beach, FL",
+                price: "$6,200,000",
+                image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+                badge: "Exclusive",
+                beds: "6",
+                baths: "5",
+                sqft: "5,800",
+                garage: "4",
+                description: "Discover unparalleled luxury in this magnificent waterfront estate situated on prestigious Miami Beach. This architectural masterpiece offers direct bay access with a private dock and boat lift. The grand interior features soaring ceilings, marble floors, and walls of glass that showcase stunning water views from every room. The gourmet kitchen includes top-tier appliances and custom millwork. The resort-style backyard boasts an infinity pool, outdoor kitchen, and multiple entertainment areas, all overlooking the serene waters.",
+                features: [
+                    "Private dock with boat lift",
+                    "Infinity pool with spa",
+                    "Direct bay access",
+                    "Marble flooring throughout",
+                    "Gourmet outdoor kitchen",
+                    "Master suite with water views",
+                    "Four-car garage",
+                    "Landscaped tropical gardens",
+                    "Security gate and cameras",
+                    "Central air conditioning"
+                ]
+            },
+            4: {
+                title: "Mountain Retreat",
+                location: "Aspen, CO",
+                price: "$1,950,000",
+                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+                badge: "Hot",
+                beds: "4",
+                baths: "3",
+                sqft: "2,800",
+                garage: "2",
+                description: "Escape to this luxurious mountain retreat nestled in the heart of Aspen's prestigious ski country. This stunning alpine residence offers ski-in/ski-out access and breathtaking panoramic mountain views. The warm and inviting interior features natural stone fireplaces, exposed beam ceilings, and floor-to-ceiling windows that frame the spectacular scenery. The gourmet kitchen includes premium appliances and custom cabinetry. After a day on the slopes, relax in the hot tub while enjoying the mountain vistas.",
+                features: [
+                    "Ski-in/ski-out access",
+                    "Panoramic mountain views",
+                    "Natural stone fireplaces",
+                    "Exposed beam ceilings",
+                    "Hot tub with mountain views",
+                    "Gourmet kitchen",
+                    "Heated driveway",
+                    "Storage for ski equipment",
+                    "Radiant floor heating",
+                    "Mountain modern design"
+                ]
+            },
+            5: {
+                title: "Urban Loft",
+                location: "Chicago, IL",
+                price: "$875,000",
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                badge: "Premium",
+                beds: "2",
+                baths: "2",
+                sqft: "1,800",
+                garage: "1",
+                description: "Experience sophisticated urban living in this stunning industrial-chic loft located in Chicago's vibrant downtown district. This converted warehouse space features soaring 14-foot ceilings, exposed brick walls, and oversized windows that flood the space with natural light. The open-concept design seamlessly blends living, dining, and kitchen areas, perfect for modern city living. Premium finishes include polished concrete floors, stainless steel appliances, and custom built-ins that maximize the unique architectural elements.",
+                features: [
+                    "14-foot soaring ceilings",
+                    "Exposed brick walls",
+                    "Polished concrete floors",
+                    "Oversized industrial windows",
+                    "Open-concept floor plan",
+                    "Stainless steel appliances",
+                    "Custom built-in storage",
+                    "In-unit washer/dryer",
+                    "Building fitness center",
+                    "Rooftop deck access"
+                ]
+            },
+            6: {
+                title: "Suburban Mansion",
+                location: "Greenwich, CT",
+                price: "$4,200,000",
+                image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80",
+                badge: "New",
+                beds: "7",
+                baths: "6",
+                sqft: "6,500",
+                garage: "3",
+                description: "Welcome to this magnificent Georgian-style mansion situated on 2 acres of meticulously manicured grounds in prestigious Greenwich. This grand estate exemplifies timeless elegance with its classic architecture and luxurious amenities. The formal living spaces feature coffered ceilings, crown molding, and elegant hardwood floors. The gourmet kitchen includes a butler's pantry and adjoins the family room with its stone fireplace. Entertainment options abound with a home theater, wine cellar, and resort-style backyard complete with pool and cabana.",
+                features: [
+                    "2 acres of manicured grounds",
+                    "Georgian-style architecture",
+                    "Coffered ceilings",
+                    "Gourmet kitchen with butler's pantry",
+                    "Home theater room",
+                    "Temperature-controlled wine cellar",
+                    "Resort-style swimming pool",
+                    "Pool cabana and outdoor kitchen",
+                    "Three-car attached garage",
+                    "Central vacuum system"
+                ]
+            }
+        };
+
+        function openModal(propertyId) {
+            const property = properties[propertyId];
+            const modal = document.getElementById('propertyModal');
+            
+            document.getElementById('modalImage').src = property.image;
+            document.getElementById('modalBadge').textContent = property.badge;
+            document.getElementById('modalTitle').textContent = property.title;
+            document.getElementById('modalLocation').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${property.location}`;
+            document.getElementById('modalPrice').textContent = property.price;
+            document.getElementById('modalBeds').textContent = property.beds;
+            document.getElementById('modalBaths').textContent = property.baths;
+            document.getElementById('modalSqft').textContent = property.sqft;
+            document.getElementById('modalGarage').textContent = property.garage;
+            document.getElementById('modalDescription').textContent = property.description;
+            
+            const featuresContainer = document.getElementById('modalFeatures');
+            featuresContainer.innerHTML = '';
+            property.features.forEach(feature => {
+                const featureDiv = document.createElement('div');
+                featureDiv.className = 'feature-item';
+                featureDiv.innerHTML = `<i class="fas fa-check"></i> ${feature}`;
+                featuresContainer.appendChild(featureDiv);
+            });
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('propertyModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function contactAgent() {
+            alert('Connecting you with our real estate agent. We\'ll be in touch shortly!');
+        }
+
+        function scheduleViewing() {
+            alert('Scheduling a property viewing. Our team will contact you to arrange a convenient time.');
+        }
+
+        function requestInfo() {
+            alert('Additional property information will be sent to your email address.');
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('propertyModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Handle escape key to close modal
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Prevent modal content clicks from closing the modal
+        document.querySelector('.modal-content').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+
+      <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions tailored to your needs</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-in" style="--i: 0">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Sales</h3>
+                    <p>Expert guidance through the entire home buying process with access to exclusive listings and market insights.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Exclusive property listings
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Market analysis & pricing
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Negotiation expertise
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Legal documentation support
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('sales')">Learn More</button>
+                </div>
+
+                <div class="service-card animate-in" style="--i: 1">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Property Rentals</h3>
+                    <p>Find your perfect rental property with our extensive network and comprehensive market expertise.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Extensive rental database
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Tenant screening services
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Lease agreement assistance
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Property matching service
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('rentals')">Learn More</button>
+                </div>
+
+                <div class="service-card animate-in" style="--i: 2">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Property Valuation</h3>
+                    <p>Accurate market valuations using advanced analytics to help you make informed real estate decisions.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Comprehensive market analysis
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Comparative property reports
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Investment potential assessment
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Future value projections
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('valuation')">Learn More</button>
+                </div>
+
+                <div class="service-card animate-in" style="--i: 3">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Comprehensive management services for rental properties and investment portfolios with 24/7 support.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Tenant relations management
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Maintenance coordination
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Financial reporting
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            24/7 emergency support
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('management')">Learn More</button>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="service-card animate-in" style="--i: 4">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Investment Consulting</h3>
+                    <p>Strategic investment advice and portfolio optimization to maximize your real estate returns.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Investment strategy development
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Risk assessment analysis
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Portfolio diversification
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Market trend analysis
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('investment')">Learn More</button>
+                </div>
+
+                <div class="service-card animate-in" style="--i: 5">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Property Development</h3>
+                    <p>End-to-end development services from land acquisition to project completion and marketing.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Site selection & analysis
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Planning & permits
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Construction management
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            Sales & marketing support
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="learnMore('development')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+          <h2>Client Testimonials</h2>
+          <p>What our clients say about working with us</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Dream Homes made the entire process of buying our first home
+                  seamless. Their attention to detail and market knowledge was
+                  impressive."
+                </p>
+                <div class="testimonial-author">
+                  <img src="client1.jpg" alt="Sarah Johnson" />
+                  <div class="author-info">
+                    <h4>Sarah Johnson</h4>
+                    <p>Homeowner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "As an international investor, I needed reliable partners.
+                  Dream Homes exceeded my expectations with their
+                  professionalism and results."
+                </p>
+                <div class="testimonial-author">
+                  <img src="client2.jpg" alt="Michael Chen" />
+                  <div class="author-info">
+                    <h4>Michael Chen</h4>
+                    <p>Real Estate Investor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">
+                  "They sold our property for 15% above asking price in just 3
+                  weeks. Their marketing strategy was truly effective."
+                </p>
+                <div class="testimonial-author">
+                  <img src="client3.jpg" alt="Robert & Emily Wilson" />
+                  <div class="author-info">
+                    <h4>Robert & Emily Wilson</h4>
+                    <p>Sellers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>
+                    Ready to find your dream home? Contact us today for a personalized consultation. Our expert team is here to guide you through every step of your real estate journey.
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Our Office</h4>
+                            <p>123 Luxury Avenue, Suite 500</p>
+                            <p>Beverly Hills, CA 90210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Call Us</h4>
+                            <p>(123) 456-7890</p>
+                            <p>(123) 456-7891</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Email Us</h4>
+                            <p>info@dreamhomes.com</p>
+                            <p>sales@dreamhomes.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                            <p>Saturday - Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We'll get back to you soon.
+                </div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message">Please enter your full name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="error-message">Please enter a valid phone number</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">I'm interested in *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="" disabled selected>Select your interest...</option>
+                            <option value="buying">Buying a property</option>
+                            <option value="selling">Selling a property</option>
+                            <option value="renting">Renting a property</option>
+                            <option value="valuation">Property valuation</option>
+                            <option value="investment">Investment opportunities</option>
+                            <option value="other">Other inquiry</option>
+                        </select>
+                        <div class="error-message">Please select your area of interest</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>
+              Get the latest property listings and market updates delivered to
+              your inbox.
+            </p>
+          </div>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i class="fas fa-home"></i></span>
+                    <h3>Dream<span>Homes</span></h3>
+                </div>
+                <p>
+                    Your trusted partner in luxury real estate. We connect discerning
+                    buyers with exceptional properties worldwide, delivering unparalleled
+                    service and expertise.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#agents">Our Agents</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Luxury Property Sales</a></li>
+                    <li><a href="#">Premium Rentals</a></li>
+                    <li><a href="#">Property Valuation</a></li>
+                    <li><a href="#">Property Management</a></li>
+                    <li><a href="#">Investment Consulting</a></li>
+                    <li><a href="#">Relocation Services</a></li>
+                </ul>
+            </div>
+         
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2024 Dream Homes Realty. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
